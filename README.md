@@ -20,7 +20,7 @@
 > This Vet Clinic relational database, is a project for educational purposes at Microverse.
 
 ## 🛠 Built With <a name="built-with"></a>
-> SQL
+> PostgreSQL
 
 ## 💻 Getting Started <a name="getting-started"></a>
 > This repository includes files with plain SQL that can be used to recreate a database:
