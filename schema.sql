@@ -1,27 +1,24 @@
 CREATE TABLE animals (
-  id int NOT NULL AUTO_INCREMENT,
+  id SERIAL PRIMARY KEY,
   name varchar(100),
   date_of_birth date,
   escape_attempts int,
   neutered boolean,
-  weight_kg decimal,
-  PRIMARY KEY (id)
+  weight_kg decimal
 );
 
 ALTER TABLE animals
 ADD COLUMN species varchar(50);
 
 CREATE TABLE owners (
-  id int NOT NULL AUTO_INCREMENT,
+  id SERIAL PRIMARY KEY,
   full_name varchar(100),
-  age int,
-  PRIMARY KEY (id)
+  age int
 );
 
 CREATE TABLE species (
-  id int NOT NULL AUTO_INCREMENT,
-  name varchar(100),
-  PRIMARY KEY (id)
+  id SERIAL PRIMARY KEY,
+  name varchar(100)
 );
 
 ALTER TABLE animals
