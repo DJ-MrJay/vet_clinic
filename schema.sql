@@ -1,46 +1,34 @@
 CREATE TABLE animals (
-  id int,
+  id int NOT NULL AUTO_INCREMENT,
   name varchar(100),
   date_of_birth date,
   escape_attempts int,
   neutered boolean,
   weight_kg decimal,
+  PRIMARY KEY (id)
 );
 
 ALTER TABLE animals
 ADD COLUMN species varchar(50);
 
 CREATE TABLE owners (
-  id int SERIAL PRIMARY KEY,
+  id int NOT NULL AUTO_INCREMENT,
   full_name varchar(100),
-  age int
+  age int,
+  PRIMARY KEY (id)
 );
 
 CREATE TABLE species (
-  id int SERIAL PRIMARY KEY,
-  name varchar(100)
+  id int NOT NULL AUTO_INCREMENT,
+  name varchar(100),
+  PRIMARY KEY (id)
 );
-
-ALTER TABLE animals
-DROP COLUMN id;
 
 ALTER TABLE animals
 DROP COLUMN species;
 
 ALTER TABLE animals
-ADD COLUMN id SERIAL PRIMARY KEY;
+ADD COLUMN species_id int REFERENCES species(id);
 
 ALTER TABLE animals
-ADD COLUMN species_ID int;
-
-ALTER TABLE animals
-ADD FOREIGN KEY (species_id) REFERENCES species(id);
-
-ALTER TABLE animals
-ADD COLUMN owners_id int;
-
-ALTER TABLE animals
-ADD FOREIGN KEY (owner_id) REFERENCES owners(id);
-
-
-
+ADD COLUMN owners_id int REFERENCES owners(id);
