@@ -19,6 +19,8 @@
 # 📖 Vet Clinic <a name="about-project"></a>
 > This Vet Clinic relational database, is a project for educational purposes at Microverse.
 
+![drawSQL-vet-clinic](https://user-images.githubusercontent.com/97578860/222518974-252e56e2-32a3-41cd-bf3f-767b0758e881.png)
+
 ## 🛠 Built With <a name="built-with"></a>
 > PostgreSQL
 
