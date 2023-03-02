@@ -19,8 +19,6 @@
 # 📖 Vet Clinic <a name="about-project"></a>
 > This Vet Clinic relational database, is a project for educational purposes at Microverse.
 
-![drawSQL-vet-clinic](https://user-images.githubusercontent.com/97578860/222508852-204149cf-200e-4053-9c2d-dd92def6bacf.png)
-
 ## 🛠 Built With <a name="built-with"></a>
 > PostgreSQL
 
@@ -28,7 +26,7 @@
 > This repository includes files with plain SQL that can be used to recreate a database:
 - Use [schema.sql](./schema.sql) to create all tables.
 - Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g. remove records). Use responsibly!**
+- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
